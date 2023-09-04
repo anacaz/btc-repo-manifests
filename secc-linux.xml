@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote	name="origin"
+		fetch="ssh://git@github.com"
+		revision="main" />
+	<default remote="origin" />
+
+	<project name="adlwerx/meta-btc-apps" path="sources/meta-btc-apps" groups=""></project>
+</manifest>
