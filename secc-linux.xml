@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote	name="ssh1" fetch="ssh://git@github.com"/>
-	<project name="adlwerx/meta-btc-apps" path="sources/meta-btc-apps" groups="" revision="main" remote="ssh1"></project>
-	<remote	name="origin" fetch="https://git@github.com" revision="kirkstone" />
-	<project name="basler/meta-basler-imx8" path="sources/meta-basler-imx8" groups="" remote="origin"></project>
-	<project name="basler/meta-basler-tools" path="sources/meta-basler-tools" groups="" remote="origin"></project>
-	<project name="tq-systems/meta-dumpling" path="sources/meta-dumpling" groups="" remote="origin"></project>
-	<project name="openembedded/meta-openembedded" path="sources/meta-openembedded" groups="" remote="origin"></project>
-	<project name="meta-qt5/meta-qt5" path="sources/meta-qt5" groups="" remote="origin" ></project>
-	<project name="tq-systems/meta-tq" path="sources/meta-tq" groups="" remote="origin"></project>
+	<remote	name="github-priv" fetch="ssh://git@github.com"/>
+	<project name="adlwerx/meta-btc-apps" path="sources/meta-btc-apps" groups="" revision="main" remote="github-priv"></project>
+	<project name="adlwerx/rpi4-build" path="rpi4-build" groups="" revision="main" remote="github-priv"></project>
+	<remote name="yocto-proj" fetch="git://git.yoctoproject.org"/>
+	<project name="meta-java" path="sources/meta-java" groups="" revision="kirkstone" remote="yocto-proj"></project>
 </manifest>
