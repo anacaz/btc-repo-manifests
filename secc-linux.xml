@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote	name="github-priv" fetch="ssh://git@github.com"/>
-	<project name="adlwerx/meta-btc-apps" path="sources/meta-btc-apps" groups="" revision="main" remote="github-priv"></project>
-	<project name="adlwerx/rpi4-build" path="rpi4-build" groups="" revision="main" remote="github-priv"></project>
-	<remote name="yocto-proj" fetch="git://git.yoctoproject.org"/>
+	<remote	name="github" fetch="ssh://git@github.com"/>
+	<project name="adlwerx/meta-btc-apps" path="sources/meta-btc-apps" groups="" revision="main" remote="github"></project>
+	<project name="adlwerx/rpi4-build" path="rpi4-build" groups="" revision="main" remote="github"></project>
+	<project name="openembedded/meta-openembedded" path="sources/meta-openembedded" groups="" revision="kirkstone" remote="github"></project>
+	<remote name="yocto-proj" fetch="https://git.yoctoproject.org"/>
 	<project name="meta-java" path="sources/meta-java" groups="" revision="kirkstone" remote="yocto-proj"></project>
+	<project name="poky" path="sources/poky" groups="" revision="kirkstone" remote="yocto-proj"></project>
+	<project name="meta-raspberrypi" path="sources/meta-raspberrypi" groups="" revision="kirkstone" remote="yocto-proj"></project>
 </manifest>
